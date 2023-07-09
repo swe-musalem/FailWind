@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { ImSigma } from "react-icons/im";
+import Button  from './components/Button'
+import Accordion from "./components/Accordion";
+import { useId } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+
+    const items = [
+        {
+            id:useId(),
+            label:'Candels cannot light under sunshine',
+            content:'Velit pretium aenean est fames ac facilisi mauris quis gravida mollis lectus'
+        },
+        {
+            id:useId(),
+            label:'Flashlights cannot light under sunshine',
+            content:'Velit pretium aenean est fames ac facilisi mauris quis gravida mollis lectus'
+        },
+        {
+            id:useId(),
+            label:'moon cannot light under sunshine',
+            content:'Velit pretium aenean est fames ac facilisi mauris quis gravida mollis lectus'
+        },
+    ]
+    
+    return <Accordion items={items} />
 }
-
-export default App;
