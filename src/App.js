@@ -1,27 +1,17 @@
-import { ImSigma } from "react-icons/im";
-import Button  from './components/Button'
-import Accordion from "./components/Accordion";
-import { useId } from "react";
+import Dropdowm from './components/Dropdown'
+
+
+
+
 
 export default function App() {
 
-    const items = [
-        {
-            id:useId(),
-            label:'Candels cannot light under sunshine',
-            content:'Velit pretium aenean est fames ac facilisi mauris quis gravida mollis lectus'
-        },
-        {
-            id:useId(),
-            label:'Flashlights cannot light under sunshine',
-            content:'Velit pretium aenean est fames ac facilisi mauris quis gravida mollis lectus'
-        },
-        {
-            id:useId(),
-            label:'moon cannot light under sunshine',
-            content:'Velit pretium aenean est fames ac facilisi mauris quis gravida mollis lectus'
-        },
+    const options = [
+        { label:'Red', value:'red'},
+        { label:'Green', value:'green'},
+        { label:'Blue', value:'blue'},
     ]
-    
-    return <Accordion items={items} />
+
+
+   return <Dropdowm options={options}/>
 }
