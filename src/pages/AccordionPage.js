@@ -1,5 +1,5 @@
 import { ImSigma } from "react-icons/im";
-import Button  from './components/Button'
+import Button  from '../components/Button'
 import Accordion from "../components/Accordion";
 import { useId } from "react";
 
