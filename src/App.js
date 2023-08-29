@@ -23,6 +23,7 @@ export default function App() {
 
         return <div style={{
             backgroundImage:`url(${background})`,
+            backgroundColor:'#c4c4c4',
             backgroundSize:'contain',
             backgroundRepeat:'no-repeat',
             height:'100vh'
@@ -34,7 +35,7 @@ export default function App() {
 
             
 
-             <div className={`container mx-auto grid grid-cols-6 gap-4 pt-4 ${currentPath === '/home' && 'hidden'}`} >
+             <div className={` grid grid-cols-6 gap-4 pt-4 w-11/12 mx-auto   ${currentPath === '/home' && 'hidden'}`} >
                 <div className='col-span-6'><NavBar/></div>
                 <div >
                     <SearchBar />
@@ -44,7 +45,7 @@ export default function App() {
                     
                 </div>
 
-            <div className='col-span-5 '>
+            <div className='col-span-5 h-full'>
                 <Route path={`${docsPrefix}/`}>
                     <DropdownPage/>
                 </Route>

@@ -71,7 +71,7 @@ export default function SearchBar({children}) {
                     
                     <div className=" w-full overflow-hidden mt-4 rounded-md ">
                         <input className="w-full p-2 caret-slate-400 bg-slate-800 rounded-md" placeholder=" Quick Search..."  value={keyWord}  onChange={handleInput} type="text" />
-                        { keyWord && selectOpen &&<div className="flex flex-col text-slate-600 gap-2 p-2">{renderdResults}</div>}
+                        { keyWord && selectOpen &&<div className="flex flex-col text-slate-400 bg-slate-800 gap-2 p-2">{renderdResults}</div>}
                     </div>
             </div>
     

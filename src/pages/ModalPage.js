@@ -28,7 +28,7 @@ export default function ModalPage(){
         <div>
             <Button onClick={handleClick} primary className="rounded-md">Open Modal</Button>
           { showModal && modal }
-          <div className="text-slate-400">
+          <div className="text-slate-400 overflow-y-scroll h-[30rem] w-full">
           Sed urna vitae pede ex habitant suscipit at iaculis mattis class pretium ridiculus diam consectetur suspendisse rutrum imperdiet 
           ut finibus fringilla id ornare faucibus est etiam magnis auctor justo montes si semper hendrerit quisque purus per porttitor bibendum 
           nunc lorem viverra lacinia natoque consectetuer dictumst quis sodales blandit porta vestibulum himenaeos convallis nec tortor torquent a
